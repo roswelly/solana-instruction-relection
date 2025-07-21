@@ -1,0 +1,42 @@
+Transaction executed in slot 5:
+  Signature: 58Ucp778669g3xboKBf9ESzgPgkLQ1PTHpwQMT1yLs8tuaBN1zKb9ME2rXkte9y1uSq8vTGdh2aJ3U6gthAuvTtb
+  Status: Ok
+  Log Messages:
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [1]
+    Program log: Memo (len 8): "memo#t.1"
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 600000 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [1]
+    Program log: Memo (len 8): "memo#t.2"
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 595727 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
+    Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj invoke [1]
+    Program log: Instruction: ParentCall
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [2]
+    Program log: Memo (len 8): "memo#p.1"
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 589400 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [2]
+    Program log: Memo (len 8): "memo#p.2"
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 583886 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
+    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN invoke [2]
+    Program log: Instruction: ChildCall
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
+    Program log: Memo (len 8): "memo#c.1"
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 576143 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
+    Program log: Memo (len 8): "memo#c.2"
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 570629 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
+    Program log: Processing sibling instructions in child_call...
+    Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.2"
+    Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.1"
+    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 40521 of 577941 compute units
+    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN success
+    Program log: Processing sibling instructions in parent_call...
+    Program log: [parent] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#t.2"
+    Program log: [parent] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#t.1"
+    Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj consumed 83066 of 591454 compute units
+    Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj success

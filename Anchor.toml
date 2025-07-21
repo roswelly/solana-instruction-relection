@@ -1,0 +1,22 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+instructions_reflection = "H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/Users/ikeyanagi/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[[test.genesis]]
+address = "ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN"
+program = "target/deploy/instructions_reflection_child.so"
