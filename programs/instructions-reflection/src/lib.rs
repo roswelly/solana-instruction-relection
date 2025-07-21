@@ -38,11 +38,23 @@ pub mod instructions_reflection {
             data: vec![0xf8, 0x51, 0xda, 0x23, 0x3c, 0x1d, 0x3d, 0x90], // disc for child_call
         }, &vec![])?;
 
+        invoke(&Instruction {
+            program_id: ctx.accounts.child_program.key(),
+            accounts: vec![
+                AccountMeta {
+                    pubkey: ctx.accounts.memo_program.key(),
+                    is_signer: false,
+                    is_writable: false,
+                },
+            ],
+            data: vec![0xf8, 0x51, 0xda, 0x23, 0x3c, 0x1d, 0x3d, 0x90], // disc for child_call
+        }, &vec![])?;
+
         // get processed sibling
         msg!("Processing sibling instructions in parent_call...");
         let mut index = 0;
         while let Some(instruction) = get_processed_sibling_instruction(index) {
-            msg!("[parent] Sibling instruction program: {:?}, data: {:?}", instruction.program_id, String::from_utf8(instruction.data).unwrap());
+            msg!("[parent] Sibling instruction program: {:?}, data: {:?}", instruction.program_id, String::from_utf8(instruction.data).unwrap_or("Invalid UTF-8".to_string()));
             index += 1;
         }
 
@@ -66,7 +78,7 @@ pub mod instructions_reflection {
         msg!("Processing sibling instructions in child_call...");
         let mut index = 0;
         while let Some(instruction) = get_processed_sibling_instruction(index) {
-            msg!("[child] Sibling instruction program: {:?}, data: {:?}", instruction.program_id, String::from_utf8(instruction.data).unwrap());
+            msg!("[child] Sibling instruction program: {:?}, data: {:?}", instruction.program_id, String::from_utf8(instruction.data).unwrap_or("Invalid UTF-8".to_string()));
             index += 1;
         }
 

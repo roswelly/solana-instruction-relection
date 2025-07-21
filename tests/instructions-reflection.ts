@@ -18,7 +18,13 @@ describe("instructions-reflection", () => {
     }).preInstructions([
       { programId: MEMO_PROGRAM_ID, keys: [], data: Buffer.from("memo#t.1") },
       { programId: MEMO_PROGRAM_ID, keys: [], data: Buffer.from("memo#t.2") },
-    ]).rpc();
+    ]).postInstructions([
+      await program.methods.parentCall().accounts({
+      memoProgram: MEMO_PROGRAM_ID,
+      childProgram: new anchor.web3.PublicKey("ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN"),
+    }).instruction()
+    ])
+    .rpc();
     console.log("Your transaction signature", tx);
   });
 });
