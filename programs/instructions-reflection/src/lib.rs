@@ -1,6 +1,12 @@
 use anchor_lang::prelude::*;
 use anchor_lang::solana_program::{instruction::Instruction, program::invoke};
 
+use anchor_lang::solana_program::instruction::{
+    get_processed_sibling_instruction,
+    get_stack_height,
+    TRANSACTION_LEVEL_STACK_HEIGHT,
+};
+
 #[cfg(not(feature = "child"))]
 declare_id!("H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj");
 
@@ -9,11 +15,12 @@ declare_id!("ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN");
 
 #[program]
 pub mod instructions_reflection {
-    use anchor_lang::solana_program::instruction::get_processed_sibling_instruction;
-
     use super::*;
 
     pub fn parent_call(ctx: Context<ParentCall>) -> Result<()> {
+        let stack_height = get_stack_height();
+        msg!("[parent] Current stack height: {} (transaction level height: {})", stack_height, TRANSACTION_LEVEL_STACK_HEIGHT);
+
         invoke(&Instruction {
             program_id: ctx.accounts.memo_program.key(),
             accounts: vec![],
@@ -62,6 +69,9 @@ pub mod instructions_reflection {
     }
 
     pub fn child_call(ctx: Context<ChildCall>) -> Result<()> {
+        let stack_height = get_stack_height();
+        msg!("[child] Current stack height: {}", stack_height);
+
         invoke(&Instruction {
             program_id: ctx.accounts.memo_program.key(),
             accounts: vec![],

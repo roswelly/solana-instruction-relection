@@ -1,5 +1,5 @@
-Transaction executed in slot 4:
-  Signature: 3Cx6vuL82Z5b28u3tywnqxGcbd7BHmJaNcnWgWPBzWHnw5Td8qxqYCpdRacvuUkSQvAi4iyRJ5pCzU154uWQUrHv
+Transaction executed in slot 5:
+  Signature: 35r3JHCEhDA8rCHQpGhPKpqWc2nvTMC3Gru8nZx1mh8VDLwxRQj5uzWrS7oLHPsXwZNV5Sm2FeHKPLmiQr7SjrC4
   Status: Ok
   Log Messages:
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [1]
@@ -12,94 +12,100 @@ Transaction executed in slot 4:
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj invoke [1]
     Program log: Instruction: ParentCall
+    Program log: [parent] Current stack height: 1 (transaction level height: 1)
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [2]
     Program log: Memo (len 8): "memo#p.1"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 789400 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 788437 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [2]
     Program log: Memo (len 8): "memo#p.2"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 783886 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 782923 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN invoke [2]
     Program log: Instruction: ChildCall
+    Program log: [child] Current stack height: 2
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
     Program log: Memo (len 8): "memo#c.1"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 776133 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 774510 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
     Program log: Memo (len 8): "memo#c.2"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 770619 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 768996 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program log: Processing sibling instructions in child_call...
     Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.2"
     Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.1"
-    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 40627 of 777931 compute units
+    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 41335 of 776968 compute units
     Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN success
     Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN invoke [2]
     Program log: Instruction: ChildCall
+    Program log: [child] Current stack height: 2
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
     Program log: Memo (len 8): "memo#c.1"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 733822 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 731491 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
     Program log: Memo (len 8): "memo#c.2"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 728308 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 725977 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program log: Processing sibling instructions in child_call...
     Program log: [child] Sibling instruction program: ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN, data: "Invalid UTF-8"
     Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.2"
     Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.1"
-    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 56523 of 735620 compute units
+    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 57159 of 733949 compute units
     Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN success
     Program log: Processing sibling instructions in parent_call...
     Program log: [parent] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#t.2"
     Program log: [parent] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#t.1"
-    Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj consumed 141448 of 791454 compute units
+    Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj consumed 143755 of 791454 compute units
     Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj success
     Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj invoke [1]
     Program log: Instruction: ParentCall
+    Program log: [parent] Current stack height: 1 (transaction level height: 1)
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [2]
     Program log: Memo (len 8): "memo#p.1"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 647952 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 644682 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [2]
     Program log: Memo (len 8): "memo#p.2"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 642438 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 639168 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN invoke [2]
     Program log: Instruction: ChildCall
+    Program log: [child] Current stack height: 2
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
     Program log: Memo (len 8): "memo#c.1"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 634685 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 630755 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
     Program log: Memo (len 8): "memo#c.2"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 629171 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 625241 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program log: Processing sibling instructions in child_call...
     Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.2"
     Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.1"
-    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 40627 of 636483 compute units
+    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 41335 of 633213 compute units
     Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN success
     Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN invoke [2]
     Program log: Instruction: ChildCall
+    Program log: [child] Current stack height: 2
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
     Program log: Memo (len 8): "memo#c.1"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 592374 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 587736 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr invoke [3]
     Program log: Memo (len 8): "memo#c.2"
-    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 586860 compute units
+    Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4273 of 582222 compute units
     Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success
     Program log: Processing sibling instructions in child_call...
     Program log: [child] Sibling instruction program: ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN, data: "Invalid UTF-8"
     Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.2"
     Program log: [child] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#p.1"
-    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 56523 of 594172 compute units
+    Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN consumed 57159 of 590194 compute units
     Program ExQUucxSnQbAuLoTQxKo4m5woiMmh1YiLgZ2UW11zhEN success
     Program log: Processing sibling instructions in parent_call...
     Program log: [parent] Sibling instruction program: H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj, data: "Invalid UTF-8"
     Program log: [parent] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#t.2"
     Program log: [parent] Sibling instruction program: MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr, data: "memo#t.1"
-    Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj consumed 157405 of 650006 compute units
+    Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj consumed 159712 of 647699 compute units
     Program H4vTCnnisqDnZW2ByCcUVbxuB73Xni4D4VzAt7ywuoHj success
